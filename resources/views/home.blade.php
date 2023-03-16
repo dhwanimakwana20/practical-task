@@ -31,10 +31,6 @@
                                 <tbody>
                                 </tbody>
                             </table>
-                         @elseif (auth()->user()->action_performed == 1 && auth()->user()->status == "approved")  
-                            You are approved user
-                        @elseif (auth()->user()->action_performed == 1 && auth()->user()->status == "unapproved")  
-                            You are unapproved user
                          @else
                             Please wait till admin approves your request!
                         @endif

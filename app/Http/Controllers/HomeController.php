@@ -52,4 +52,16 @@ class HomeController extends Controller
 
         return response()->json(['status' => 'Updates are saved!!']);
     }
+
+
+    public function approve(Request $request){
+        return view('approvedUser');
+    }
+
+    public function unapprove(Request $request){
+        return view('unapprovedUser');
+    }
+    public function pending(Request $request){
+        return view('pendingUser');
+    }
 }
